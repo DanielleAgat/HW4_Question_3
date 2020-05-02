@@ -2,13 +2,14 @@
 //Student's ID: 313357329
 
 /*
- * TODO: Add description !!!
+ * This program gets an array and turns it into a tree and list of leafs.
+ * Then it gets a new data and a parent from the user and inserts a new leaf as the given parent's child
+ * It also update the leaf's list accordingly and then print both the updated tree and list.
  */
 
 
 #include <stdio.h>
 #include "Tree.h"
-#include "IntegersList.h"
 #define SIZE 100
 
 void main() {
@@ -27,7 +28,7 @@ void main() {
     tr = BuildTreeFromArrayWithLeafList(arr, size);//the array is given as described in question 1
     //scan the tree inorder (LDR) and find the first parent (a node with parentData as data) that has no child in branchSelect
     p = findParent(tr, parentData, branchSelect);
-//    tr = AddLeaf(tr, p, branchSelect, data);
+    tr = AddLeaf(tr, p, branchSelect, data);
     printTreeInorder(tr); //Print the tree in-order (LDR)
     printLeafList(tr); //Print the leaves from left to right
     freeTree(tr);
