@@ -96,25 +96,25 @@ CMakeFiles/Question_3.dir/ErrorsHandlings.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Question_3.dir/ErrorsHandlings.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW4/Question_3/ErrorsHandlings.c" -o CMakeFiles/Question_3.dir/ErrorsHandlings.c.s
 
-CMakeFiles/Question_3.dir/integersLists.c.o: CMakeFiles/Question_3.dir/flags.make
-CMakeFiles/Question_3.dir/integersLists.c.o: ../integersLists.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW4/Question_3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Question_3.dir/integersLists.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Question_3.dir/integersLists.c.o   -c "/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW4/Question_3/integersLists.c"
+CMakeFiles/Question_3.dir/IntegersList.c.o: CMakeFiles/Question_3.dir/flags.make
+CMakeFiles/Question_3.dir/IntegersList.c.o: ../IntegersList.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW4/Question_3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Question_3.dir/IntegersList.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Question_3.dir/IntegersList.c.o   -c "/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW4/Question_3/IntegersList.c"
 
-CMakeFiles/Question_3.dir/integersLists.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Question_3.dir/integersLists.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW4/Question_3/integersLists.c" > CMakeFiles/Question_3.dir/integersLists.c.i
+CMakeFiles/Question_3.dir/IntegersList.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Question_3.dir/IntegersList.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW4/Question_3/IntegersList.c" > CMakeFiles/Question_3.dir/IntegersList.c.i
 
-CMakeFiles/Question_3.dir/integersLists.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Question_3.dir/integersLists.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW4/Question_3/integersLists.c" -o CMakeFiles/Question_3.dir/integersLists.c.s
+CMakeFiles/Question_3.dir/IntegersList.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Question_3.dir/IntegersList.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW4/Question_3/IntegersList.c" -o CMakeFiles/Question_3.dir/IntegersList.c.s
 
 # Object files for target Question_3
 Question_3_OBJECTS = \
 "CMakeFiles/Question_3.dir/main.c.o" \
 "CMakeFiles/Question_3.dir/Tree.c.o" \
 "CMakeFiles/Question_3.dir/ErrorsHandlings.c.o" \
-"CMakeFiles/Question_3.dir/integersLists.c.o"
+"CMakeFiles/Question_3.dir/IntegersList.c.o"
 
 # External object files for target Question_3
 Question_3_EXTERNAL_OBJECTS =
@@ -122,7 +122,7 @@ Question_3_EXTERNAL_OBJECTS =
 Question_3: CMakeFiles/Question_3.dir/main.c.o
 Question_3: CMakeFiles/Question_3.dir/Tree.c.o
 Question_3: CMakeFiles/Question_3.dir/ErrorsHandlings.c.o
-Question_3: CMakeFiles/Question_3.dir/integersLists.c.o
+Question_3: CMakeFiles/Question_3.dir/IntegersList.c.o
 Question_3: CMakeFiles/Question_3.dir/build.make
 Question_3: CMakeFiles/Question_3.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW4/Question_3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable Question_3"

@@ -150,6 +150,33 @@ ErrorsHandlings.c.s:
 	$(MAKE) -f CMakeFiles/Question_3.dir/build.make CMakeFiles/Question_3.dir/ErrorsHandlings.c.s
 .PHONY : ErrorsHandlings.c.s
 
+IntegersList.o: IntegersList.c.o
+
+.PHONY : IntegersList.o
+
+# target to build an object file
+IntegersList.c.o:
+	$(MAKE) -f CMakeFiles/Question_3.dir/build.make CMakeFiles/Question_3.dir/IntegersList.c.o
+.PHONY : IntegersList.c.o
+
+IntegersList.i: IntegersList.c.i
+
+.PHONY : IntegersList.i
+
+# target to preprocess a source file
+IntegersList.c.i:
+	$(MAKE) -f CMakeFiles/Question_3.dir/build.make CMakeFiles/Question_3.dir/IntegersList.c.i
+.PHONY : IntegersList.c.i
+
+IntegersList.s: IntegersList.c.s
+
+.PHONY : IntegersList.s
+
+# target to generate assembly for a file
+IntegersList.c.s:
+	$(MAKE) -f CMakeFiles/Question_3.dir/build.make CMakeFiles/Question_3.dir/IntegersList.c.s
+.PHONY : IntegersList.c.s
+
 Tree.o: Tree.c.o
 
 .PHONY : Tree.o
@@ -176,33 +203,6 @@ Tree.s: Tree.c.s
 Tree.c.s:
 	$(MAKE) -f CMakeFiles/Question_3.dir/build.make CMakeFiles/Question_3.dir/Tree.c.s
 .PHONY : Tree.c.s
-
-integersLists.o: integersLists.c.o
-
-.PHONY : integersLists.o
-
-# target to build an object file
-integersLists.c.o:
-	$(MAKE) -f CMakeFiles/Question_3.dir/build.make CMakeFiles/Question_3.dir/integersLists.c.o
-.PHONY : integersLists.c.o
-
-integersLists.i: integersLists.c.i
-
-.PHONY : integersLists.i
-
-# target to preprocess a source file
-integersLists.c.i:
-	$(MAKE) -f CMakeFiles/Question_3.dir/build.make CMakeFiles/Question_3.dir/integersLists.c.i
-.PHONY : integersLists.c.i
-
-integersLists.s: integersLists.c.s
-
-.PHONY : integersLists.s
-
-# target to generate assembly for a file
-integersLists.c.s:
-	$(MAKE) -f CMakeFiles/Question_3.dir/build.make CMakeFiles/Question_3.dir/integersLists.c.s
-.PHONY : integersLists.c.s
 
 main.o: main.c.o
 
@@ -243,12 +243,12 @@ help:
 	@echo "... ErrorsHandlings.o"
 	@echo "... ErrorsHandlings.i"
 	@echo "... ErrorsHandlings.s"
+	@echo "... IntegersList.o"
+	@echo "... IntegersList.i"
+	@echo "... IntegersList.s"
 	@echo "... Tree.o"
 	@echo "... Tree.i"
 	@echo "... Tree.s"
-	@echo "... integersLists.o"
-	@echo "... integersLists.i"
-	@echo "... integersLists.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

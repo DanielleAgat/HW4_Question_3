@@ -3,4 +3,4 @@ project(Question_3 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Question_3 main.c Tree.c Tree.h ErrorsHandlings.c ErrorsHandlings.h integersLists.c integersLists.h)
+add_executable(Question_3 main.c Tree.c Tree.h ErrorsHandlings.c ErrorsHandlings.h IntegersList.c IntegersList.h)

@@ -2,11 +2,14 @@
 //Student's ID: 313357329
 
 /*
- * TODO: Add description !!!
+ * This program gets an array and turns it into a tree and list of leafs.
+ * Then it gets a new data and a parent from the user and inserts a new leaf as the given parent's child
+ * It also update the leaf's list accordingly and then print both the updated tree and list.
  */
+
+
 #include <stdio.h>
 #include "Tree.h"
-#include "integersLists.h"
 #define SIZE 100
 
 void main() {
