@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Question_3.dir/ErrorsHandlings.c.o"
+  "CMakeFiles/Question_3.dir/IntegersList.c.o"
   "CMakeFiles/Question_3.dir/Tree.c.o"
-  "CMakeFiles/Question_3.dir/integersLists.c.o"
   "CMakeFiles/Question_3.dir/main.c.o"
   "Question_3"
   "Question_3.pdb"

@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "ErrorsHandlings.h"
-#include "integersLists.h"
+#include "IntegersList.h"
 
 typedef int BOOL; //TODO: Remove if needed
 #define FALSE 0 //TODO: Remove if needed
@@ -17,28 +17,19 @@ typedef int BOOL; //TODO: Remove if needed
 #define RIGHT 1
 
 
-//This Macro returns TRUE if a given char represents a digit; FALSE otherwise.
-#define isNum(num) ((((num) >= '0') && ((num) <= '9')) ? TRUE : FALSE ) //TODO: Remove if needed
-//This Macro returns True if a given char represents a valid operator ('+','-','*','/','%') ; False otherwise.
-#define isOperator(char) ((char == '*') || (char == '/') || (char == '-') || (char == '+') || (char == '%')) //TODO: Remove if needed
-//This Macro returns True if a given char is a valid char(num/operator/parenthesis) ; False otherwise.
-#define isValidChar(char) ((isOperator(char)) || (isNum(char)) || (char == '(') || (char == ')')) //TODO: Remove if needed
-//This Macro returns the given char digit as an integer.
-#define parseInt(char) ((char) - '0') //TODO: Remove if needed
-
 
 //Tree's declaration
-typedef struct  treeNode {
+typedef struct treeNode{
     int data;
     struct treeNode* parent;
     struct treeNode* left;
     struct treeNode* right;
-} TreeNode;
+}TreeNode;
 
 typedef struct tree{
     TreeNode* root;
     List leafList;
-} Tree;
+}Tree;
 
 //This function gets an array and creates a tree and a leaf list from it's values.
 Tree BuildTreeFromArrayWithLeafList(int* arr,int size);
@@ -47,10 +38,17 @@ Tree BuildTreeFromArrayWithLeafList(int* arr,int size);
 TreeNode* _build_tree_from_array_with_leaf_list(int* arr,int size,TreeNode* root);
 
 //TODO: Add description
+TreeNode* findParent(Tree tr,int  parentData,int branchSelect);
+
+//TODO: Add description
+TreeNode* _find_Parent(TreeNode* root,int parentData,int branchSelect);
+
+
+//TODO: Add description
 Tree AddLeaf (Tree tr, TreeNode *p, int branchSelect, int data);
 
 //This function gets a value and creates a new leaf.
-TreeNode* createLeaf(char ch);
+TreeNode* createLeaf(int num,TreeNode* parent);
 
 //This function prints a given root's values in LDR order
 void printTreeInorder(Tree tr);

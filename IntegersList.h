@@ -1,8 +1,8 @@
 //Student's Name: Danielle Agat Levi
 //Student's ID: 313357329
 
-#ifndef INTEGERSLISTS_H
-#define INTEGERSLISTS_H
+#ifndef INTEGERSLIST_H
+#define INTEGERSLIST_H
 #include <stdio.h>
 #include <stdlib.h>
 #include "ErrorsHandlings.h"
@@ -19,9 +19,11 @@ typedef struct list  {
     ListNode* tail;
 } List;
 
-//Given function.
-//This function gets integers from the user, then it creates a list of pointers to those integers and returns it to the user.
-List getList();
+//TODO: Add description
+List buildListFromTree(Tree tr);
+
+//TODO: Add description
+void _build_list_from_tree(List* lst,TreeNode* root);
 
 //This function creates a new (empty) list.
 void makeEmptyList(List* lst);

@@ -1,7 +1,8 @@
 //Student's Name: Danielle Agat Levi
 //Student's ID: 313357329
 
-#include "integersLists.h"
+#include "IntegersList.h"
+#include "Tree.h"
 
 void makeEmptyList(List* lst){
     lst->head = lst->tail = NULL;
@@ -31,21 +32,21 @@ void _insertNewNodeToEnd(List* lst, ListNode* newNode){
 }
 
 
-List getList(){
-    List res;
-    int size, num, i;
+List buildListFromTree(Tree tr){
+    List lst;
+    makeEmptyList(&lst);
+    _build_list_from_tree(&lst,tr.root);
+    return lst;
+}
 
-    makeEmptyList(&res);
-
-    printf("Please enter the number of items to be entered:\n");
-    scanf("%d", &size);
-
-    printf("Please enter the numbers:\n");
-    for(i = 0; i < size; i++){
-        scanf("%d", &num);
-        insertDataToEndList(&res, num);
+void _build_list_from_tree(List* lst,TreeNode* root){
+    if(root == NULL) return;
+    if(root->left == NULL && root->right == NULL) { //Means this is a leaf
+        insertDataToEndList(lst,root->data);
+    }else{
+        _build_list_from_tree(lst,root->left);
+        _build_list_from_tree(lst,root->right);
     }
-    return res;
 }
 
 void printLeafList(Tree tr){
